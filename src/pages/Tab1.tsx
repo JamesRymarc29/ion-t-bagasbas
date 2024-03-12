@@ -19,7 +19,7 @@ const Tab1: React.FC = () => {
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Tab 1</IonTitle>
+            <IonTitle size="large">Profile</IonTitle>
           </IonToolbar>
         </IonHeader>
         <IonCard>
@@ -30,7 +30,7 @@ const Tab1: React.FC = () => {
       </IonCardHeader>
 
       <IonCardContent>Don’t try to be perfect. Just try to be better than you were yesterday</IonCardContent>
-      <IonButton id="present-alert">Click Me</IonButton>
+      <IonButton id="present-alert" expand='full'>About Me</IonButton>
       <IonAlert
         trigger="present-alert"
         header="A Short Title Is Best"
@@ -39,7 +39,7 @@ const Tab1: React.FC = () => {
         buttons={['Action']}
       ></IonAlert>  
 
-    <IonButton id="open-action-sheet">Open</IonButton>
+    <IonButton id="open-action-sheet" expand='full'>Open</IonButton>
       <IonActionSheet
         trigger="open-action-sheet"
         header="Actions"
