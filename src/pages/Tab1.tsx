@@ -30,7 +30,7 @@ const Tab1: React.FC = () => {
       </IonCardHeader>
 
       <IonCardContent>Don’t try to be perfect. Just try to be better than you were yesterday</IonCardContent>
-      <IonButton id="present-alert" expand='full'>About Me</IonButton > 
+      <IonButton id="present-alert" color="success" expand='full'>About Me</IonButton > 
       <IonAlert
         trigger="present-alert"
         header="James Rymarc Bagasbas"
@@ -40,7 +40,7 @@ const Tab1: React.FC = () => {
         
       ></IonAlert>  
 
-    <IonButton id="open-action-sheet" expand='full'>Open</IonButton>
+    <IonButton id="open-action-sheet" color="success" expand='full'>Open</IonButton>
       <IonActionSheet
         trigger="open-action-sheet"
         header="Actions"
