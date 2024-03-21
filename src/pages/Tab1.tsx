@@ -33,10 +33,10 @@ const Tab1: React.FC = () => {
       <IonButton id="present-alert" expand='full'>About Me</IonButton > 
       <IonAlert
         trigger="present-alert"
-        header="A Short Title Is Best"
-        subHeader="A Sub Header Is Optional"
-        message="A message should be a short, complete sentence."
-        buttons={['Action']}
+        header="James Rymarc Bagasbas"
+        subHeader="BSIT student"
+        message="If you don't take risks, you can't create a future."
+        buttons={['Back']}
         
       ></IonAlert>  
 

@@ -27,6 +27,7 @@ const Tab2: React.FC = () => {
       <IonCardContent></IonCardContent>
     </IonCard>
     <ExploreContainer name="" />
+  
         <ExploreContainer name="" />
       </IonContent>
     </IonPage>
