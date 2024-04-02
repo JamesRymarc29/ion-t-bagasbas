@@ -25,11 +25,11 @@ const Tab2: React.FC = () => {
           </IonToolbar>
         </IonHeader>
 
-        <div className="ion-padding">
+        <div className="ion-padding"> 
           {/* Step 4: Display click counter */}
           <p>Click Count: {clickCount}</p>
           {/* Step 4: Add a button to increment click count */}
-          <IonButton onClick={incrementCount}> Please Click!</IonButton>
+          <IonButton  color="success" onClick={incrementCount}> Please Click!</IonButton> 
         </div>
       </IonContent>
     </IonPage>
