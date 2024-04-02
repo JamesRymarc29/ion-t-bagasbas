@@ -29,7 +29,7 @@ const Tab2: React.FC = () => {
           {/* Step 4: Display click counter */}
           <p>Click Count: {clickCount}</p>
           {/* Step 4: Add a button to increment click count */}
-          <IonButton  color="success" onClick={incrementCount}> Please Click!</IonButton> 
+          <IonButton  color="success"expand='full'onClick={incrementCount}> Please Click!</IonButton> 
         </div>
       </IonContent>
     </IonPage>
