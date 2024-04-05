@@ -11,10 +11,10 @@ const Home: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-      <IonCard>
-      <img alt="Silhouette of mountains" src="../src/assets/img/welcome.png" />
+      <IonCard> 
+      <img alt="Silhouette of mountains" src="../src/assets/img/welcome.png" /> 
       <IonCardHeader>
-        <IonCardTitle>Welcome to my Aplication</IonCardTitle>
+        <IonCardTitle>Welcome to my Application</IonCardTitle>
         <IonCardSubtitle></IonCardSubtitle>
       </IonCardHeader>
         <IonHeader collapse="condense">
@@ -24,6 +24,49 @@ const Home: React.FC = () => {
         </IonHeader>
       <IonCardContent></IonCardContent>
     </IonCard>
+    
+
+    <IonCard>
+     
+      <img alt="Silhouette of mountains" src="../src/assets/img/one piece.png" />
+      <IonCardHeader>
+      </IonCardHeader>
+        <IonHeader collapse="condense">
+          <IonToolbar>
+            <IonTitle size="large">Home</IonTitle>
+          </IonToolbar>
+        </IonHeader>
+      <IonCardContent></IonCardContent>
+    </IonCard>
+
+    <IonCard color="primary"> 
+        <IonCardHeader>
+          <IonCardTitle>Profile</IonCardTitle>
+          
+        </IonCardHeader>
+
+        <IonCardContent></IonCardContent>
+      </IonCard>
+
+      <IonCard color="secondary">
+        <IonCardHeader>
+          <IonCardTitle>Click Counter</IonCardTitle>
+          <IonCardSubtitle></IonCardSubtitle>
+        </IonCardHeader>
+
+        <IonCardContent></IonCardContent>
+      </IonCard>
+
+      <IonCard color="success">
+        <IonCardHeader>
+          <IonCardTitle>Calculator</IonCardTitle>
+          <IonCardSubtitle></IonCardSubtitle>
+        </IonCardHeader>
+
+        <IonCardContent></IonCardContent>
+      </IonCard>
+
+    
     <ExploreContainer name="" />
         
       </IonContent>
