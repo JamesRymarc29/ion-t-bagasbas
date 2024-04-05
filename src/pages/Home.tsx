@@ -57,7 +57,7 @@ const Home: React.FC = () => {
         <IonCardContent></IonCardContent>
       </IonCard>
 
-      <IonCard color="tertiary">
+      <IonCard color="success">
         <IonCardHeader>
           <IonCardTitle>Calculator</IonCardTitle>
           <IonCardSubtitle></IonCardSubtitle>
