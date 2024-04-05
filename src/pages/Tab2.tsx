@@ -1,34 +1,36 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle  } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import React, { useState } from 'react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton } from '@ionic/react';
 import './Tab2.css';
 
 const Tab2: React.FC = () => {
+  // Step 2: Create state variable for click count
+  const [clickCount, setClickCount] = useState(0);
+
+  // Step 3: Define function to increment click count
+  const incrementCount = () => {
+    setClickCount(prevCount => prevCount + 1);
+  };
+
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Home</IonTitle>
+          <IonTitle>Click Counter</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Home</IonTitle>
+            <IonTitle size="large">Click counter</IonTitle>
           </IonToolbar>
         </IonHeader>
 
-        <IonCard>
-      <img alt="Silhouette of mountains" src="../src/assets/img/welcome.png" />
-      <IonCardHeader>
-        <IonCardTitle>Welcome to my Application</IonCardTitle>
-        <IonCardSubtitle></IonCardSubtitle>
-      </IonCardHeader>
-
-      <IonCardContent></IonCardContent>
-    </IonCard>
-    <ExploreContainer name="" />
-  
-        <ExploreContainer name="" />
+        <div className="ion-padding"> 
+          {/* Step 4: Display click counter */}
+          <p>Click Count: {clickCount}</p>
+          {/* Step 4: Add a button to increment click count */}
+          <IonButton  color="success"expand='full'onClick={incrementCount}> Please Click!</IonButton> 
+        </div>
       </IonContent>
     </IonPage>
   );
