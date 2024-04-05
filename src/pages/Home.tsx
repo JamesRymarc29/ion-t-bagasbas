@@ -11,8 +11,8 @@ const Home: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-      <IonCard>
-      <img alt="Silhouette of mountains" src="../src/assets/img/welcome.png" />
+      <IonCard> 
+      <img alt="Silhouette of mountains" src="../src/assets/img/welcome.png" /> 
       <IonCardHeader>
         <IonCardTitle>Welcome to my Application</IonCardTitle>
         <IonCardSubtitle></IonCardSubtitle>
@@ -30,8 +30,6 @@ const Home: React.FC = () => {
      
       <img alt="Silhouette of mountains" src="../src/assets/img/one piece.png" />
       <IonCardHeader>
-        
-       
       </IonCardHeader>
         <IonHeader collapse="condense">
           <IonToolbar>
@@ -40,6 +38,33 @@ const Home: React.FC = () => {
         </IonHeader>
       <IonCardContent></IonCardContent>
     </IonCard>
+
+    <IonCard color="primary"> 
+        <IonCardHeader>
+          <IonCardTitle>Card Title</IonCardTitle>
+          <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
+        </IonCardHeader>
+
+        <IonCardContent>Card Content</IonCardContent>
+      </IonCard>
+
+      <IonCard color="secondary">
+        <IonCardHeader>
+          <IonCardTitle>Card Title</IonCardTitle>
+          <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
+        </IonCardHeader>
+
+        <IonCardContent>Card Content</IonCardContent>
+      </IonCard>
+
+      <IonCard color="tertiary">
+        <IonCardHeader>
+          <IonCardTitle>Card Title</IonCardTitle>
+          <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
+        </IonCardHeader>
+
+        <IonCardContent>Card Content</IonCardContent>
+      </IonCard>
 
     
     <ExploreContainer name="" />
