@@ -30,8 +30,8 @@ const Home: React.FC = () => {
      
       <img alt="Silhouette of mountains" src="../src/assets/img/one piece.png" />
       <IonCardHeader>
-        <IonCardTitle></IonCardTitle>
-        <IonCardSubtitle></IonCardSubtitle>
+        
+       
       </IonCardHeader>
         <IonHeader collapse="condense">
           <IonToolbar>
