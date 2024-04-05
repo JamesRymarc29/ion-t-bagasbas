@@ -41,29 +41,29 @@ const Home: React.FC = () => {
 
     <IonCard color="primary"> 
         <IonCardHeader>
-          <IonCardTitle>Card Title</IonCardTitle>
-          <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
+          <IonCardTitle>Profile</IonCardTitle>
+          
         </IonCardHeader>
 
-        <IonCardContent>Card Content</IonCardContent>
+        <IonCardContent></IonCardContent>
       </IonCard>
 
       <IonCard color="secondary">
         <IonCardHeader>
-          <IonCardTitle>Card Title</IonCardTitle>
-          <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
+          <IonCardTitle>Click Counter</IonCardTitle>
+          <IonCardSubtitle></IonCardSubtitle>
         </IonCardHeader>
 
-        <IonCardContent>Card Content</IonCardContent>
+        <IonCardContent></IonCardContent>
       </IonCard>
 
       <IonCard color="tertiary">
         <IonCardHeader>
-          <IonCardTitle>Card Title</IonCardTitle>
-          <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
+          <IonCardTitle>Calculator</IonCardTitle>
+          <IonCardSubtitle></IonCardSubtitle>
         </IonCardHeader>
 
-        <IonCardContent>Card Content</IonCardContent>
+        <IonCardContent></IonCardContent>
       </IonCard>
 
     
