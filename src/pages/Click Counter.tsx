@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton } from '@ionic/react';
-import './Tab2.css';
+import './Click Counter.css';
 
 const Tab2: React.FC = () => {
   // Step 2: Create state variable for click count
