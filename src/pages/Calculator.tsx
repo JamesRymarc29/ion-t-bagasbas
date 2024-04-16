@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonButton, IonGrid, IonRow, IonCol } from '@ionic/react';
-import './Tab2.css';
+import './Calculator.css';
 
 const Tab2: React.FC = () => {
   const [displayValue, setDisplayValue] = useState('0');
