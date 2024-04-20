@@ -53,6 +53,7 @@ const Home: React.FC = () => {
       <IonCard color="secondary">
         <IonCardHeader>
           <IonCardTitle>Click Counter</IonCardTitle>
+          
           <IonIcon icon={speedometerOutline} size="large"/>
           <IonCardSubtitle></IonCardSubtitle>
         </IonCardHeader>
