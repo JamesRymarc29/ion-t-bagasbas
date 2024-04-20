@@ -45,11 +45,9 @@ const Home: React.FC = () => {
     <IonCard color="primary"> 
         <IonCardHeader>
           <IonCardTitle>Profile</IonCardTitle>
-    
+          <IonIcon icon={personCircle} size="large"/>
         </IonCardHeader>
-
-        <IonCardContent></IonCardContent>
-      <IonIcon icon={personCircle} size="large"/>
+        <IonCardContent></IonCardContent>    
       </IonCard>
 
       <IonCard color="secondary">
