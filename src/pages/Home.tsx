@@ -1,5 +1,6 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle,IonIcon } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
+import { personCircle } from 'ionicons/icons';
 
 
 const Home: React.FC = () => {
@@ -38,14 +39,17 @@ const Home: React.FC = () => {
         </IonHeader>
       <IonCardContent></IonCardContent>
     </IonCard>
+    
+
 
     <IonCard color="primary"> 
         <IonCardHeader>
           <IonCardTitle>Profile</IonCardTitle>
-          
+    
         </IonCardHeader>
 
         <IonCardContent></IonCardContent>
+      <IonIcon icon={personCircle} size="large"/>
       </IonCard>
 
       <IonCard color="secondary">
