@@ -2,8 +2,8 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardC
 import ExploreContainer from '../components/ExploreContainer';
 import { calculatorOutline, personCircle, speedometerOutline } from 'ionicons/icons';
 
-
 const Home: React.FC = () => {
+  
   return (
     <IonPage>
       <IonHeader>
@@ -44,10 +44,13 @@ const Home: React.FC = () => {
 
     <IonCard color="primary"> 
         <IonCardHeader>
+          
           <IonCardTitle>Profile</IonCardTitle>
+          
           <IonIcon icon={personCircle} size="large"/>
         </IonCardHeader>
-        <IonCardContent></IonCardContent>    
+        <IonCardContent></IonCardContent>  
+        
       </IonCard>
 
       <IonCard color="secondary">
@@ -64,8 +67,8 @@ const Home: React.FC = () => {
       <IonCard color="success">
         <IonCardHeader>
           <IonCardTitle>Calculator</IonCardTitle>
-          
-          <IonIcon icon={calculatorOutline} size="large"/>
+
+          <IonIcon icon={calculatorOutline} size="large"/> 
           <IonCardSubtitle></IonCardSubtitle>
         </IonCardHeader>
 
