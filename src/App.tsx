@@ -12,8 +12,7 @@ import {
 import { IonReactRouter } from '@ionic/react-router';
 import { calculatorOutline, closeCircleOutline, ellipse, homeOutline, informationCircle, personCircle, speedometer, speedometerOutline, square, triangle } from 'ionicons/icons';
 import Tab1 from './pages/Profile';
-import Tab2 from './pages/Clickcounter';
-import Tab3 from './pages/Calculator';
+
 
 
 
@@ -41,6 +40,7 @@ setupIonicReact();
 
 const App: React.FC = () => (
   
+  
   <IonApp>
     <IonReactRouter>
       <IonTabs>
@@ -48,14 +48,15 @@ const App: React.FC = () => (
           <Route exact path="/Home">
             <Home />
           </Route>    
+          
           <Route exact path="/tab1">
             <Tab1 />
           </Route>        
           <Route exact path="/tab2">
-            <Tab2 />
+            
           </Route>
           <Route path="/tab3">
-            <Tab3 />
+            
             <Route exact path="null">
           </Route>
           </Route>
@@ -79,16 +80,8 @@ const App: React.FC = () => (
             <IonIcon aria-hidden="true" icon={informationCircle} />
             <IonLabel>profile</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="Tab2" href="/Tab2">
-            <IonIcon aria-hidden="true" icon={speedometerOutline} />
-            <IonLabel>click counter</IonLabel>
-          </IonTabButton>
           
-       
-          <IonTabButton tab="Tab3" href="/Tab3">
-            <IonIcon aria-hidden="true" icon={calculatorOutline} />
-            <IonLabel>calculator</IonLabel>
-          </IonTabButton>
+          
         </IonTabBar> 
       </IonTabs>
     </IonReactRouter>
