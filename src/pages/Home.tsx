@@ -40,18 +40,6 @@ const Home: React.FC = () => {
       <IonCardContent></IonCardContent>
     </IonCard>
     
-
-    
-    <IonCard color="primary"> 
-        <IonCardHeader>
-          
-          <IonCardTitle>Profile</IonCardTitle>
-          
-          <IonIcon icon={personCircle} size="large"/>
-        </IonCardHeader>
-        <IonCardContent></IonCardContent>         
-      </IonCard>
-
       <IonRouterLink href="/Clickcounter">
       <IonCard color="secondary">
         <IonCardHeader>
