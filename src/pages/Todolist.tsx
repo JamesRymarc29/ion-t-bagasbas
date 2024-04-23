@@ -32,6 +32,11 @@ const Todolist: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
+       
+        <IonItem>
+          <IonInput placeholder="New Task" value={newTask} onIonChange={(e) => setNewTask(e.detail.value!)} />
+          <IonButton slot="end" onClick={handleAddTask}>Add</IonButton>
+        </IonItem>
         <IonList>
           {tasks.map((task, index) => (
             <IonItem key={index}>
@@ -41,10 +46,6 @@ const Todolist: React.FC = () => {
             </IonItem>
           ))}
         </IonList>
-        <IonItem>
-          <IonInput placeholder="New Task" value={newTask} onIonChange={(e) => setNewTask(e.detail.value!)} />
-          <IonButton slot="end" onClick={handleAddTask}>Add</IonButton>
-        </IonItem>
       </IonContent>
     </IonPage>
   );
