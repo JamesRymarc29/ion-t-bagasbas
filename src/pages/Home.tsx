@@ -62,7 +62,7 @@ const Home: React.FC = () => {
       </IonCard>
       </IonRouterLink>  
 
-      <IonRouterLink href="/Todo list"></IonRouterLink>
+      <IonRouterLink href="/Todolist">
       <IonCard color="warning">
         <IonCardHeader>
           <IonCardTitle>Todo list</IonCardTitle>
@@ -70,7 +70,8 @@ const Home: React.FC = () => {
           <IonCardSubtitle></IonCardSubtitle>
         </IonCardHeader>
         <IonCardContent></IonCardContent>
-      </IonCard>    
+      </IonCard>   
+      </IonRouterLink> 
       <ExploreContainer name="" />     
       </IonContent>
     </IonPage>

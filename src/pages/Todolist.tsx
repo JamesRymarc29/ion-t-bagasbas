@@ -1,35 +1,46 @@
 import React, { useState } from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, IonItem, IonLabel, IonCheckbox, IonNote, IonBadge } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, IonItem, IonLabel, IonCheckbox, IonInput, IonButton } from '@ionic/react';
 
-const todolist: React.FC = () => {
-  const [todos, setTodos] = useState([
-    { id: 1, title: 'Task 1', completed: false },
-    { id: 2, title: 'Task 2', completed: false },
-    // Add more tasks as needed
-  ]);
+const Todolist: React.FC = () => {
+  const [tasks, setTasks] = useState<{ text: string; completed: boolean }[]>([]);
+  const [newTask, setNewTask] = useState<string>('');
 
-  const handleToggle = (id: number) => {
-    setTodos(todos.map(todo => (todo.id === id ? { ...todo, completed: !todo.completed } : todo)));
+  const handleAddTask = () => {
+    if (newTask.trim() !== '') {
+      setTasks([...tasks, { text: newTask, completed: false }]);
+      setNewTask('');
+    }
+  };
+
+  const handleToggleTask = (index: number) => {
+    const updatedTasks = [...tasks];
+    updatedTasks[index].completed = !updatedTasks[index].completed;
+    setTasks(updatedTasks);
   };
 
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Todo List</IonTitle>
+          <IonTitle>My To-Do List</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent>
+      <IonContent className="ion-padding">
         <IonList>
-          {todos.map(todo => (
-            <IonItem key={todo.id}>
-              <IonCheckbox slot="start" checked={todo.completed} onIonChange={() => handleToggle(todo.id)} />
-              <IonLabel>{todo.title}</IonLabel>
-              {todo.completed && <IonBadge color="success" slot="end">Completed</IonBadge>}
+          {tasks.map((task, index) => (
+            <IonItem key={index}>
+              <IonLabel>{task.text}</IonLabel>
+              <IonCheckbox slot="start" checked={task.completed} onIonChange={() => handleToggleTask(index)} />
             </IonItem>
           ))}
         </IonList>
+        <IonItem>
+          <IonInput placeholder="New Task" value={newTask} onIonChange={(e) => setNewTask(e.detail.value!)} />
+          <IonButton slot="end" onClick={handleAddTask}>Add</IonButton>
+        </IonItem>
       </IonContent>
     </IonPage>
   );
 };
+
+export default Todolist;

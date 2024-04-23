@@ -40,7 +40,7 @@ import Tab2 from './pages/Calculator';
 import Tab3 from './pages/Calculator';
 import Clickcounter from './pages/Clickcounter';
 import Calculator from './pages/Calculator';
-
+import Todolist from './pages/Todolist';
 setupIonicReact();
 
 const App: React.FC = () => (
@@ -59,14 +59,17 @@ const App: React.FC = () => (
           <Route exact path="/Calculator">
             <Calculator/>
           </Route>
-            
+          <Route exact path="/todolist">
+            <Todolist />
+          </Route>
+                         
             <Route exact path="null">
           </Route>
 
           <Route exact path="/">
             <Redirect to="/Home" />
           </Route>
-        </IonRouterOutlet>
+        </IonRouterOutlet> 
         <IonTabBar slot="bottom">
         
         <IonTabButton tab="Home" href="/Home">
