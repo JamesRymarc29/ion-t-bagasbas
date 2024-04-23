@@ -12,6 +12,7 @@ import {
 import { IonReactRouter } from '@ionic/react-router';
 import { calculatorOutline, closeCircleOutline, ellipse, homeOutline, informationCircle, personCircle, speedometer, speedometerOutline, square, triangle } from 'ionicons/icons';
 import Tab1 from './pages/Profile';
+import '@ionic/react/css/core.css';
 
 
 
@@ -73,6 +74,8 @@ const App: React.FC = () => (
             <IonLabel>Home</IonLabel>
           </IonTabButton>
           <IonTabButton>
+          <Route path="/home" component={Home} exact={true} />
+        <Route exact path="/" render={() => <Redirect to="/home" />} />
             <IonIcon aria-hidden="true" icon={closeCircleOutline} /> 
             <IonLabel>Blank</IonLabel>
           </IonTabButton>
