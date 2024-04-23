@@ -18,6 +18,12 @@ const Todolist: React.FC = () => {
     setTasks(updatedTasks);
   };
 
+  const handleDeleteTask = (index: number) => {
+    const updatedTasks = [...tasks];
+    updatedTasks.splice(index, 1);
+    setTasks(updatedTasks);
+  };
+
   return (
     <IonPage>
       <IonHeader>
@@ -31,6 +37,7 @@ const Todolist: React.FC = () => {
             <IonItem key={index}>
               <IonLabel>{task.text}</IonLabel>
               <IonCheckbox slot="start" checked={task.completed} onIonChange={() => handleToggleTask(index)} />
+              <IonButton slot="end" onClick={() => handleDeleteTask(index)}>Delete</IonButton>
             </IonItem>
           ))}
         </IonList>
