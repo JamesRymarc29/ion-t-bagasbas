@@ -63,7 +63,7 @@ const Home: React.FC = () => {
       </IonRouterLink>  
 
       
-      <IonCard color="success">
+      <IonCard color="warning">
         <IonCardHeader>
           <IonCardTitle>Todo list</IonCardTitle>
           <IonIcon icon={pencilOutline} size="large"/>
