@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton } from '@ionic/react';
 import './Clickcounter.css';
 
-const Tab2: React.FC = () => {
+const Clickcounter: React.FC = () => {
   // Step 2: Create state variable for click count
   const [clickCount, setClickCount] = useState(0);
 
@@ -36,4 +36,4 @@ const Tab2: React.FC = () => {
   );
 };
 
-export default Tab2;
+export default Clickcounter;

@@ -1,7 +1,7 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle,IonIcon } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import { calculatorOutline, personCircle, speedometerOutline } from 'ionicons/icons';
-
+import { IonRouterLink } from '@ionic/react';
 const Home: React.FC = () => {
   
   return (
@@ -41,7 +41,7 @@ const Home: React.FC = () => {
     </IonCard>
     
 
-
+    
     <IonCard color="primary"> 
         <IonCardHeader>
           
@@ -49,21 +49,21 @@ const Home: React.FC = () => {
           
           <IonIcon icon={personCircle} size="large"/>
         </IonCardHeader>
-        <IonCardContent></IonCardContent>  
-        
+        <IonCardContent></IonCardContent>         
       </IonCard>
 
+      <IonRouterLink href="/Clickcounter">
       <IonCard color="secondary">
         <IonCardHeader>
           <IonCardTitle>Click Counter</IonCardTitle>
-
           <IonIcon icon={speedometerOutline} size="large"/>
           <IonCardSubtitle></IonCardSubtitle>
         </IonCardHeader>
-
         <IonCardContent></IonCardContent>
       </IonCard>
+      </IonRouterLink>
 
+      <IonRouterLink href="/Calculator">
       <IonCard color="success">
         <IonCardHeader>
           <IonCardTitle>Calculator</IonCardTitle>
@@ -74,10 +74,8 @@ const Home: React.FC = () => {
 
         <IonCardContent></IonCardContent>
       </IonCard>
-
-    
-    <ExploreContainer name="" />
-        
+      </IonRouterLink>  
+      <ExploreContainer name="" />     
       </IonContent>
     </IonPage>
   );

@@ -35,6 +35,10 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 import Home from './pages/Home';
+import Tab2 from './pages/Calculator';
+import Tab3 from './pages/Calculator';
+import Clickcounter from './pages/Clickcounter';
+import Calculator from './pages/Calculator';
 
 setupIonicReact();
 
@@ -47,19 +51,17 @@ const App: React.FC = () => (
         <IonRouterOutlet>
           <Route exact path="/Home">
             <Home />
-          </Route>    
-          
-          <Route exact path="/tab1">
-            <Tab1 />
-          </Route>        
-          <Route exact path="/tab2">
-            
+          </Route>           
+          <Route exact path="/Clickcounter">
+            <Clickcounter/>
+          </Route>                   
+          <Route exact path="/Calculator">
+            <Calculator/>
           </Route>
-          <Route path="/tab3">
             
             <Route exact path="null">
           </Route>
-          </Route>
+
           <Route exact path="/">
             <Redirect to="/Home" />
           </Route>
@@ -75,7 +77,7 @@ const App: React.FC = () => (
             <IonLabel>Blank</IonLabel>
           </IonTabButton>
           
-          <IonTabButton tab="Tab1" href="/Tab1">
+          <IonTabButton tab="Profile" href="/Profile">
             
             <IonIcon aria-hidden="true" icon={informationCircle} />
             <IonLabel>profile</IonLabel>
