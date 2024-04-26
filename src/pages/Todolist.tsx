@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, IonItem, IonLabel, IonCheckbox, IonInput, IonButton } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonList, IonItem, IonLabel, IonCheckbox, IonInput, IonButton, IonButtons, IonBackButton } from '@ionic/react';
 
 const Todolist: React.FC = () => {
   const [tasks, setTasks] = useState<{ text: string; completed: boolean }[]>([]);
@@ -28,11 +28,13 @@ const Todolist: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
+          <IonButtons slot="start">
+            <IonBackButton defaultHref="/" />
+          </IonButtons>
           <IonTitle>My To-Do List</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
-       
         <IonItem>
           <IonInput placeholder="New Task" value={newTask} onIonChange={(e) => setNewTask(e.detail.value!)} />
           <IonButton slot="end" onClick={handleAddTask}>Add</IonButton>
