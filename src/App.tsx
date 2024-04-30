@@ -13,7 +13,7 @@ import { IonReactRouter } from '@ionic/react-router';
 import { calculatorOutline, closeCircleOutline, ellipse, homeOutline, informationCircle, personCircle, speedometer, speedometerOutline, square, triangle } from 'ionicons/icons';
 import Tab1 from './pages/Profile';
 import '@ionic/react/css/core.css';
-
+import QuoteGenerator from './pages/quotegenerator';
 
 
 
@@ -88,7 +88,10 @@ const App: React.FC = () => (
             <IonIcon aria-hidden="true" icon={informationCircle} />
             <IonLabel>profile</IonLabel>
           </IonTabButton>
-          
+          <Route path="/quotegenerator">
+            <QuoteGenerator />
+          </Route>
+
           
         </IonTabBar> 
       </IonTabs>
