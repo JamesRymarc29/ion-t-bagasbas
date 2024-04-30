@@ -10,12 +10,10 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
+
 import { calculatorOutline, closeCircleOutline, ellipse, homeOutline, informationCircle, personCircle, speedometer, speedometerOutline, square, triangle } from 'ionicons/icons';
 import Tab1 from './pages/Profile';
 import '@ionic/react/css/core.css';
-
-
-
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -54,6 +52,7 @@ const App: React.FC = () => (
         <IonRouterOutlet>
           <Route exact path="/Home">
             <Home />
+
           </Route>           
           <Route exact path="/Clickcounter">
             <Clickcounter/>
@@ -76,6 +75,7 @@ const App: React.FC = () => (
           </Route>
 
           <Route exact path="/">
+
             <Redirect to="/Home" />
           </Route>
         </IonRouterOutlet> 
@@ -85,6 +85,7 @@ const App: React.FC = () => (
             <IonIcon aria-hidden="true" icon={homeOutline} />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
+
           <IonTabButton>
           <Route path="/home" component={Home} exact={true} />
         <Route exact path="/" render={() => <Redirect to="/home" />} />
@@ -96,6 +97,7 @@ const App: React.FC = () => (
             
             <IonIcon aria-hidden="true" icon={informationCircle} />
             <IonLabel>profile</IonLabel>
+
           </IonTabButton>
           <Route path="/quotegenerator">
             <QuoteGenerator />

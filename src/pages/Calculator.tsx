@@ -3,6 +3,7 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardC
 import './Calculator.css';
 
 const Calculator: React.FC = () => {
+
   const [displayValue, setDisplayValue] = useState('0');
   const [previousValue, setPreviousValue] = useState('');
   const [operator, setOperator] = useState('');
