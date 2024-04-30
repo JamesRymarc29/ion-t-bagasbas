@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonButton, IonGrid, IonRow, IonCol } from '@ionic/react';
 import './Calculator.css';
 
-const Tab3: React.FC = () => {
+const Calculator: React.FC = () => {
+
   const [displayValue, setDisplayValue] = useState('0');
   const [previousValue, setPreviousValue] = useState('');
   const [operator, setOperator] = useState('');
@@ -138,4 +139,4 @@ const Tab3: React.FC = () => {
   );
 };
 
-export default Tab3;
+export default Calculator;

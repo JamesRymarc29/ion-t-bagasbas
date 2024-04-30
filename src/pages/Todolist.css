@@ -1,0 +1,18 @@
+ion-item {
+    --padding-start: 20px;
+    --inner-padding-end: 10px;
+  }
+  
+  ion-label {
+    white-space: normal;
+    word-wrap: break-word;
+  }
+  
+  ion-input {
+    width: 70%;
+  }
+  
+  ion-button {
+    margin-left: 10px;
+  }
+  
