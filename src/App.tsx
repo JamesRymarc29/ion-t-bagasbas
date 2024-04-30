@@ -13,7 +13,7 @@ import { IonReactRouter } from '@ionic/react-router';
 import { calculatorOutline, closeCircleOutline, ellipse, homeOutline, informationCircle, personCircle, speedometer, speedometerOutline, square, triangle } from 'ionicons/icons';
 import Tab1 from './pages/Profile';
 import '@ionic/react/css/core.css';
-import QuoteGenerator from './pages/quotegenerator';
+
 
 
 
@@ -41,6 +41,7 @@ import Tab3 from './pages/Calculator';
 import Clickcounter from './pages/Clickcounter';
 import Calculator from './pages/Calculator';
 import Todolist from './pages/Todolist';
+import QuoteGenerator from './pages/quotegenerator';
 setupIonicReact();
 
 const App: React.FC = () => (
@@ -62,7 +63,9 @@ const App: React.FC = () => (
           <Route exact path="/todolist">
             <Todolist />
           </Route>
-                         
+          <Route path="/quotegenerator">
+            <QuoteGenerator />
+          </Route>              
             <Route exact path="null">
           </Route>
 
