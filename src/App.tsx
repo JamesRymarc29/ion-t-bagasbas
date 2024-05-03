@@ -87,16 +87,8 @@ const App: React.FC = () => (
             <IonIcon aria-hidden="true" icon={homeOutline} />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
-
-          <IonTabButton>
-          <Route path="/home" component={Home} exact={true} />
-        <Route exact path="/" render={() => <Redirect to="/home" />} />
-            <IonIcon aria-hidden="true" icon={closeCircleOutline} /> 
-            <IonLabel>Blank</IonLabel>
-          </IonTabButton>
-          
-          <IonTabButton tab="Profile" href="/Profile">
-            
+   
+          <IonTabButton tab="Profile" href="/Profile">      
             <IonIcon aria-hidden="true" icon={informationCircle} />
             <IonLabel>profile</IonLabel>
 
