@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonButtons, IonBackButton } from '@ionic/react';
 import './Clickcounter.css';
 
 const Clickcounter: React.FC = () => {
@@ -11,10 +11,19 @@ const Clickcounter: React.FC = () => {
     setClickCount(prevCount => prevCount + 1);
   };
 
+  // Step 5: Define function to reset click count
+  const resetCount = () => {
+    setClickCount(0);
+  };
+
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
+          {/* Back Button */}
+          <IonButtons slot="start">
+            <IonBackButton defaultHref="/" />
+          </IonButtons>
           <IonTitle>Click Counter</IonTitle>
         </IonToolbar>
       </IonHeader>
@@ -26,10 +35,12 @@ const Clickcounter: React.FC = () => {
         </IonHeader>
 
         <div className="ion-padding"> 
-          {/* Step 4: Display click counter */}
+          {/* Display click counter */}
           <p>Click Count: {clickCount}</p>
-          {/* Step 4: Add a button to increment click count */}
-          <IonButton  color="success"expand='full'onClick={incrementCount}> Please Click!</IonButton> 
+          {/* Button to increment click count */}
+          <IonButton color="success" expand="full" onClick={incrementCount}> Please Click!</IonButton> 
+          {/* Button to reset click count */}
+          <IonButton color="danger" expand="full" onClick={resetCount}>Reset</IonButton>
         </div>
       </IonContent>
     </IonPage>
