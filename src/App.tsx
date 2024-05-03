@@ -41,6 +41,7 @@ import Calculator from './pages/Calculator';
 import Todolist from './pages/Todolist';
 import QuoteGenerator from './pages/quotegenerator';
 import Notes from './pages/notes/notes';
+import Profile from './pages/Profile';
 setupIonicReact();
 
 const App: React.FC = () => (
@@ -70,9 +71,10 @@ const App: React.FC = () => (
           <Route path="/notes">
             <Notes />
           </Route>
-            
-            <Route exact path="null">
+          <Route path="/Profile">
+            <Profile />
           </Route>
+           
 
           <Route exact path="/">
 
