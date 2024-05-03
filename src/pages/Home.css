@@ -1,0 +1,33 @@
+/* Home.css */
+
+/* Styles for the ion-card component */
+ion-card {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styles for the ion-icon inside ion-card */
+  .home-card-icon {
+    font-size: 2rem;
+  }
+  
+  /* Styles for the title of the ion-card */
+  .home-card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Styles for the subtitle of the ion-card */
+  .home-card-subtitle {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Styles for the sub-icons inside ion-card */
+  .home-card-subicon {
+    font-size: 1.5rem;
+    margin-right: 5px;
+  }
+  

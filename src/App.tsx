@@ -70,9 +70,12 @@ const App: React.FC = () => (
           <Route path="/notes">
             <Notes />
           </Route>
-            
-            <Route exact path="null">
+
+          <Route path="/Profile">
+            <Tab1 />
           </Route>
+            
+          
 
           <Route exact path="/">
 
