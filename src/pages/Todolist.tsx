@@ -154,7 +154,7 @@ const deleteNote = async (index: number) => {
           <IonButton slot="start" fill="clear" href='/'>
             Back
           </IonButton>
-          <IonTitle>Notes</IonTitle>
+          <IonTitle>Todo List</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
