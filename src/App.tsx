@@ -51,44 +51,50 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-          <Route exact path="/Home">
-            <Home />
 
-          </Route>           
-          <Route exact path="/Clickcounter">
-            <Clickcounter/>
-          </Route>                   
-          <Route exact path="/Calculator">
+        
+      
+          <Route exact path="/ion-t-bagasbas/Home">
+          <Home/>
+          </Route>  
+          
+          <Route exact path="/ion-t-bagasbas/Home/Clickcounter">        
+            <Clickcounter/> 
+          </Route>  
+                                   
+          <Route path="/ion-t-bagasbas/Home/Calculator">
             <Calculator/>
           </Route>
-          <Route exact path="/todolist">
+
+          <Route path="/ion-t-bagasbas/Home/Todolist">
             <Todolist />
           </Route>
-          <Route path="/quotegenerator">
+
+          <Route path="/ion-t-bagasbas/Home/Quotegenerator">
             <QuoteGenerator />
           </Route>  
           
-          <Route path="/notes">
+          <Route path="/ion-t-bagasbas/Home/Notes">
             <Notes />
           </Route>
-          <Route path="/Profile">
+
+          <Route exact path="/ion-t-bagasbas/Profile">
             <Profile />
           </Route>
            
-
-          <Route exact path="/">
-
-            <Redirect to="/Home" />
+          <Route exact path="/ion-t-bagasbas/">
+            <Redirect to="/ion-t-bagasbas/Home" />
           </Route>
+          
         </IonRouterOutlet> 
         <IonTabBar slot="bottom">
         
-        <IonTabButton tab="Home" href="/Home">
+        <IonTabButton tab="Home" href="/ion-t-bagasbas/Home">
             <IonIcon aria-hidden="true" icon={homeOutline} />
             <IonLabel>Home</IonLabel>
           </IonTabButton>
    
-          <IonTabButton tab="Profile" href="/Profile">      
+          <IonTabButton tab="Profile" href="/ion-t-bagasbas/Profile">
             <IonIcon aria-hidden="true" icon={informationCircle} />
             <IonLabel>profile</IonLabel>
 

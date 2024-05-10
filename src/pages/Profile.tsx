@@ -9,10 +9,9 @@ const Profile: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          {/* Back Button */}
-          <IonButtons slot="start">
-            <IonBackButton defaultHref="/" />
-          </IonButtons>
+          <IonButtons slot='start'>
+              <IonBackButton defaultHref='/app/Home'/>
+           </IonButtons>
           {/* Title */}
           <IonTitle>Profile</IonTitle>
         </IonToolbar>
