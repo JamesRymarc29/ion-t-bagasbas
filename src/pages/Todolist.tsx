@@ -34,7 +34,7 @@ import { trashOutline, pencilOutline } from 'ionicons/icons';
 import { collection, addDoc, onSnapshot,updateDoc,doc, deleteDoc} from 'firebase/firestore';
 import { db } from './firebase';
 
-const Notes: React.FC = () => {
+const Todolist: React.FC = () => {
   const [notes, readNotes] = useState<{ id: string; title: string; description: string;dateAdded: string; }[]>([]);
   const [newTitle, setNewTitle] = useState<string>('');
   const [newDescription, setNewDescription] = useState<string>('');
@@ -151,9 +151,9 @@ const deleteNote = async (index: number) => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonButton slot="start" fill="clear" href='/'>
-            Back
-          </IonButton>
+        <IonButtons slot='start'>
+              <IonBackButton defaultHref='/app/home'/>
+           </IonButtons>
           <IonTitle>Todo List</IonTitle>
         </IonToolbar>
       </IonHeader>
@@ -235,4 +235,4 @@ const deleteNote = async (index: number) => {
   );
 };
 
-export default Notes;
+export default Todolist;

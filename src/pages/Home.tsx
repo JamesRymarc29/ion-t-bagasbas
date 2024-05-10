@@ -37,7 +37,7 @@ const cardData = [
     title: 'Click Counter',
     icon: speedometerOutline,
     subtitle: 'Applet #1',
-    link: '/clickcounter',
+    link: '/ion-t-bagasbas/Home/Clickcounter',
     tags: {
       tag1: logoIonic,
       tag2: logoReact
@@ -48,7 +48,7 @@ const cardData = [
     title: 'Calculator',
     icon: calculator,
     subtitle: 'Applet #2',
-    link: '/calculator',
+    link: '/ion-t-bagasbas/Home/Calculator',
     tags: {
       tag1: logoIonic,
       tag2: logoReact
@@ -58,7 +58,7 @@ const cardData = [
     title: 'To Do List',
     icon: pencil,
     subtitle: 'Applet #3',
-    link: '/todolist',
+    link: '/ion-t-bagasbas/Home/TodoList',
     tags: {
       tag1: logoIonic,
       tag2: logoReact
@@ -68,7 +68,7 @@ const cardData = [
     title: 'Quote Generator',
     icon: chatbubble,
     subtitle: 'Applet #4',
-    link: '/quotegenerator',
+    link: '/ion-t-bagasbas/Home/QuoteGenerator',
     tags: {
       tag1: logoIonic,
       tag2: logoReact
@@ -78,7 +78,7 @@ const cardData = [
     title: 'Notes',
     icon: readerOutline,
     subtitle: 'Applet #5',
-    link: '/notes',
+    link: '/ion-t-bagasbas/Home/Notes',
     tags: {
       tag1: logoIonic,
       tag2: logoReact, 
@@ -93,11 +93,12 @@ const Home: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>('');
   
     return (
-      <IonPage>
+      
+      <IonPage>       
         <IonHeader>
           <IonToolbar>
             <IonTitle>Home</IonTitle>
-          </IonToolbar>
+          </IonToolbar>         
         </IonHeader>
         <IonContent fullscreen>
           <IonHeader collapse="condense">
@@ -115,7 +116,7 @@ const Home: React.FC = () => {
           {cardData
             .filter((card) => card.title.toLowerCase().includes(searchTerm.toLowerCase()))
             .map((card, index) => (
-              <IonCard key={index} href={card.link}>
+              <IonCard key={index} routerLink={card.link} routerDirection='forward'>
                 <IonCardHeader>
                   <IonCardTitle>
                     <IonGrid>

@@ -28,6 +28,7 @@ import {
 //Ionicons
 import { trashOutline, pencilOutline } from 'ionicons/icons';
 import rizzCard from '../assets/json/rizzCard.json';
+import './Quotegenerator.css';
 
 
 // Firebase
@@ -147,13 +148,14 @@ const deleteNote = async (index: number) => {
 };
 
   return (
+    
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonButton slot="start" fill="clear" href='/'>
-            Back
-          </IonButton>
-          <IonTitle>Quote genarator</IonTitle>
+        <IonButtons slot='start'>
+              <IonBackButton defaultHref='/app/home'/>
+           </IonButtons>
+          <IonTitle>Quote generator</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
@@ -207,7 +209,7 @@ const deleteNote = async (index: number) => {
         {/*Todo list output*/}
         <br></br>
         <IonItemDivider color="light">
-          <IonLabel>Notes</IonLabel>
+          <IonLabel>Quote generator</IonLabel>
         </IonItemDivider>
         <IonList>
           {notes
