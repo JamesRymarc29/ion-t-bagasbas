@@ -7,10 +7,9 @@ export default defineConfig({
   plugins: [
     react(),
     legacy()
+    
   ],
-  test: {
-    globals: true,
-    environment: 'jsdom',
-    setupFiles: './src/setupTests.ts',
+  base:"/ion-t-bagasbas/"
+
   }
-})
+)
