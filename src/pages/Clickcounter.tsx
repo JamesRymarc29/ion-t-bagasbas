@@ -21,9 +21,9 @@ const Clickcounter: React.FC = () => {
       <IonHeader>
         <IonToolbar>
           {/* Back Button */}
-          <IonButtons slot="start">
-            <IonBackButton defaultHref="/" />
-          </IonButtons>
+          <IonButtons slot='start'>
+              <IonBackButton defaultHref='/app/Home'/>
+           </IonButtons>
           <IonTitle>Click Counter</IonTitle>
         </IonToolbar>
       </IonHeader>
