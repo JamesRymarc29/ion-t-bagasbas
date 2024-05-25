@@ -95,7 +95,7 @@ const App: React.FC = () => (
           </IonTabButton>
    
           <IonTabButton tab="Profile" href="/ion-t-bagasbas/Profile">
-            <IonIcon aria-hidden="true" icon={informationCircle} />
+            <IonIcon aria-hidden="true" icon={personCircle} />
             <IonLabel>profile</IonLabel>
 
           </IonTabButton>
