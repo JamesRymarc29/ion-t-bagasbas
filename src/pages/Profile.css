@@ -1,0 +1,42 @@
+.cover-photo-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+  }
+  
+  .cover-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .profile-photo-container {
+    position: absolute;
+    top: 150px; /* Adjust as needed to position the profile photo */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    border: 5px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 1; /* Ensures the profile photo is above the cover photo */
+  }
+  
+  .profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .photo-upload-input {
+    display: none;
+  }
+  
+  .change-cover-photo-button,
+  .change-profile-photo-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  
